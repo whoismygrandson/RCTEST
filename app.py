@@ -20,7 +20,7 @@ AVALIABLE_WEIGHTS = {
     for basename, ext in (
         os.path.splitext(filename) for filename in os.listdir(WEIGHTS_PATH)
     )
-    if (path = WEIGHTS_PATH / (basename + ext)).is_file() and ext.endswith("pth")
+    if (path := WEIGHTS_PATH / (basename + ext)).is_file() and ext.endswith("pth")
 }
 
 
